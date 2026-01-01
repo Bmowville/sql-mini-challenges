@@ -10,6 +10,8 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 ## Challenge index
 1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival/)
 
+2. Top customers by total spend (window function) — [challenges/002_top_customers](challenges/002_top_customers/)
+
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
