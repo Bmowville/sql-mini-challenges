@@ -8,11 +8,26 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 - Focus is on readable queries you could use in real work
 
 ## Challenge index
-1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival/)
-
-2. Top customers by total spend (window function) — [challenges/002_top_customers](challenges/002_top_customers/)
-
+1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival)
+2. Top customers by total spend (window function) — [challenges/002_top_customers](challenges/002_top_customers)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
+
+## How to run (SQLite)
+Each challenge includes:
+- `schema.sql` (creates tables + sample data)
+- `solution.sql` (the query)
+
+Quick run with SQLite:
+
+```bash
+sqlite3 :memory: < challenges/001_passenger_survival/schema.sql
+sqlite3 :memory: < challenges/001_passenger_survival/solution.sql
+```
+**Or run both in one go:**
+
+```bash
+cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_survival/solution.sql | sqlite3
+```
 
