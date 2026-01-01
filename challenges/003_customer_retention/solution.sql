@@ -4,10 +4,10 @@
 WITH monthly_orders AS (
   SELECT
     customer_id,
-    -- month key like 2024-02
-    strftime('%Y-%m', order_date) AS ym,
-    -- sortable month index for "consecutive month" math
-    (CAST(strftime('%Y', order_date) AS INTEGER) * 12) + CAST(strftime('%m', order_date) AS INTEGER) AS ym_idx
+    date(order_date, 'start of month') AS month_start,
+    strftime('%Y-%m', date(order_date, 'start of month')) AS ym,
+    (CAST(strftime('%Y', date(order_date, 'start of month')) AS INTEGER) * 12)
+      + CAST(strftime('%m', date(order_date, 'start of month')) AS INTEGER) AS ym_idx
   FROM orders
   GROUP BY customer_id, ym
 ),
