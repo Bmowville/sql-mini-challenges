@@ -15,6 +15,7 @@ Tip: each challenge folder includes its own README with the question, expected o
 3. Customer retention (repeat customers by month) — [challenges/003_customer_retention](challenges/003_customer_retention)
 4. Cohort retention (active users by months after signup) — [challenges/004_cohort_retention](challenges/004_cohort_retention)
 5. Daily revenue (7-day rolling) — [challenges/005_daily_revenue](challenges/005_daily_revenue)
+6. Funnel conversion rates (view → cart → purchase) — [challenges/006_funnel_conversion](challenges/006_funnel_conversion)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
