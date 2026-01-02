@@ -32,3 +32,8 @@ sqlite3 :memory: < challenges/001_passenger_survival/solution.sql
 cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_survival/solution.sql | sqlite3
 ```
 
+### Windows (Command Prompt)
+
+```bat
+type challenges\003_customer_retention\schema.sql challenges\003_customer_retention\solution.sql | sqlite3 -header -column :memory:
+```
