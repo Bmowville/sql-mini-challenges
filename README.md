@@ -42,3 +42,6 @@ cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_surviv
 ```bat
 type challenges\003_customer_retention\schema.sql challenges\003_customer_retention\solution.sql | sqlite3 -header -column :memory:
 ```
+
+Last updated: 2026-01-02
+
