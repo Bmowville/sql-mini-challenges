@@ -6,6 +6,8 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 - Each challenge has a small dataset schema + a question
 - Solutions are written in plain SQL
 - Focus is on readable queries you could use in real work
+  
+Tip: each challenge folder includes its own README with the question, expected output, and run command.
 
 ## Challenge index
 1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival)
