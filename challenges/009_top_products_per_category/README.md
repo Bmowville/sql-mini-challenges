@@ -28,3 +28,10 @@ type challenges\\009\_top\_products\_per\_category\\schema.sql challenges\\009\_
 
 ```
 
+## Output
+
+Columns:
+- category
+- product
+- revenue_usd
+- rank_in_category
