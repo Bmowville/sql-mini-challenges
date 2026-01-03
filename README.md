@@ -27,6 +27,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 15. Sessionization (30-min inactivity rule) — [challenges/015_sessionization](challenges/015_sessionization)
 16. Monthly median order value (window median in SQLite) — [challenges/016_monthly_median_order_value](challenges/016_monthly_median_order_value)
 17. Longest purchase streak (consecutive months) — [challenges/017_longest_purchase_streak](challenges/017_longest_purchase_streak)
+18. Time to repeat purchase (1st → 2nd order + days) — [challenges/018_time_to_repeat](challenges/018_time_to_repeat)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
