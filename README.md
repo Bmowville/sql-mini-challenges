@@ -37,6 +37,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 25. Signup → first purchase lag (avg + median) — [challenges/025_signup_to_first_purchase](challenges/025_signup_to_first_purchase)
 26. Repeat purchase within 30 days (cohort repeat rate) — [challenges/026_repeat_purchase_30d](challenges/026_repeat_purchase_30d)
 27. Weekly retention (active customers + WoW retention rate) — [challenges/027_weekly_retention](challenges/027_weekly_retention)
+28. Rolling 7-day active users (date spine + region + rolling window) — [challenges/028_rolling_7d_active_users](challenges/028_rolling_7d_active_users)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
