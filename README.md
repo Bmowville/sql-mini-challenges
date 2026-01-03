@@ -38,6 +38,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 26. Repeat purchase within 30 days (cohort repeat rate) — [challenges/026_repeat_purchase_30d](challenges/026_repeat_purchase_30d)
 27. Weekly retention (active customers + WoW retention rate) — [challenges/027_weekly_retention](challenges/027_weekly_retention)
 28. Rolling 7-day active users (date spine + region + rolling window) — [challenges/028_rolling_7d_active_users](challenges/028_rolling_7d_active_users)
+29. Cohort weekly retention (rolling 4-week avg) — [challenges/029_cohort_weekly_retention_rolling](challenges/029_cohort_weekly_retention_rolling)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
