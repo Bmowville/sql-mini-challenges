@@ -24,6 +24,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 12. Product return rate (returns / orders) — [challenges/012_product_return_rate](challenges/012_product_return_rate)
 13. Monthly revenue growth (MoM %) — [challenges/013_monthly_revenue_growth](challenges/013_monthly_revenue_growth)
 14. Category monthly growth (MoM by category) — [challenges/014_category_monthly_growth](challenges/014_category_monthly_growth)
+15. Sessionization (30-min inactivity rule) — [challenges/015_sessionization](challenges/015_sessionization)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
