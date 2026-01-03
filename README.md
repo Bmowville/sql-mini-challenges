@@ -21,7 +21,8 @@ Tip: Each challenge folder includes its own README with the question, expected o
 9. Top products per category (top 3 per category) — [challenges/009_top_products_per_category](challenges/009_top_products_per_category)
 10. Customer LTV (total spend + order count + rank) — [challenges/010_customer_ltv](challenges/010_customer_ltv)
 11. Pareto customers (top ~80% revenue) — [challenges/011_pareto_customers](challenges/011_pareto_customers)
-12. <Your title here> — [challenges/012_your_folder_name](challenges/012_your_folder_name)
+12. Product return rate (returns / orders) — [challenges/012_product_return_rate](challenges/012_product_return_rate)
+
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
