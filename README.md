@@ -40,6 +40,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 28. Rolling 7-day active users (date spine + region + rolling window) — [challenges/028_rolling_7d_active_users](challenges/028_rolling_7d_active_users)
 29. Cohort weekly retention (rolling 4-week avg) — [challenges/029_cohort_weekly_retention_rolling](challenges/029_cohort_weekly_retention_rolling)
 30. Top customers per month (ties + MoM change + share of month) — [challenges/030_top_customers_monthly_ties](challenges/030_top_customers_monthly_ties)
+31. Longest consecutive activity streak (gap & islands) — [challenges/031_longest_activity_streak](challenges/031_longest_activity_streak)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
