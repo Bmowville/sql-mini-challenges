@@ -7,7 +7,7 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 - Solutions are written in plain SQL
 - Focus is on readable queries you could use in real work
   
-Tip: each challenge folder includes its own README with the question, expected output, and run command.
+Tip: Each challenge folder includes its own README with the question, expected output, and run command.
 
 ## Challenge index
 1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival)
@@ -19,6 +19,8 @@ Tip: each challenge folder includes its own README with the question, expected o
 7. Category revenue share (% of total) — [challenges/007_category_revenue_share](challenges/007_category_revenue_share)
 8. Daily revenue with missing dates (date spine + rolling 7 day) — [challenges/008_daily_revenue_date_spine](challenges/008_daily_revenue_date_spine)
 9. Top products per category (top 3 per category) — [challenges/009_top_products_per_category](challenges/009_top_products_per_category)
+10. Customer LTV (total spend + order count + rank) — [challenges/010_customer_ltv](challenges/010_customer_ltv)
+11. Pareto customers (top ~80% revenue) — [challenges/011_pareto_customers](challenges/011_pareto_customers)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
