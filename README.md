@@ -22,7 +22,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 10. Customer LTV (total spend + order count + rank) — [challenges/010_customer_ltv](challenges/010_customer_ltv)
 11. Pareto customers (top ~80% revenue) — [challenges/011_pareto_customers](challenges/011_pareto_customers)
 12. Product return rate (returns / orders) — [challenges/012_product_return_rate](challenges/012_product_return_rate)
-
+13. Monthly revenue growth (MoM %) — [challenges/013_monthly_revenue_growth](challenges/013_monthly_revenue_growth)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
