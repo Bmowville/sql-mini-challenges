@@ -36,6 +36,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 24. RFM segmentation (recency + frequency + monetary quartiles) — [challenges/024_rfm_segmentation](challenges/024_rfm_segmentation)
 25. Signup → first purchase lag (avg + median) — [challenges/025_signup_to_first_purchase](challenges/025_signup_to_first_purchase)
 26. Repeat purchase within 30 days (cohort repeat rate) — [challenges/026_repeat_purchase_30d](challenges/026_repeat_purchase_30d)
+27. Weekly retention (active customers + WoW retention rate) — [challenges/027_weekly_retention](challenges/027_weekly_retention)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
