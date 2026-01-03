@@ -33,6 +33,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 21. Churned customers (no orders in last 30 days) — [challenges/021_churned_customers](challenges/021_churned_customers)
 22. Customer reactivation (returned after inactivity) — [challenges/022_customer_reactivation](challenges/022_customer_reactivation)
 23. Weekly active users (WAU) — [challenges/023_weekly_active_users](challenges/023_weekly_active_users)
+24. RFM segmentation (recency + frequency + monetary quartiles) — [challenges/024_rfm_segmentation](challenges/024_rfm_segmentation)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
