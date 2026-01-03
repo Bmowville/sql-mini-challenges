@@ -29,6 +29,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 17. Longest purchase streak (consecutive months) — [challenges/017_longest_purchase_streak](challenges/017_longest_purchase_streak)
 18. Time to repeat purchase (1st → 2nd order + days) — [challenges/018_time_to_repeat](challenges/018_time_to_repeat)
 19. Repeat purchase within 30 days (cohort month + rate) — [challenges/019_repeat_within_30d_cohort](challenges/019_repeat_within_30d_cohort)
+20. Retention matrix (cohort month x month number) — [challenges/020_retention_matrix](challenges/020_retention_matrix)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
