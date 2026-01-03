@@ -31,6 +31,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 19. Repeat purchase within 30 days (cohort month + rate) — [challenges/019_repeat_within_30d_cohort](challenges/019_repeat_within_30d_cohort)
 20. Retention matrix (cohort month x month number) — [challenges/020_retention_matrix](challenges/020_retention_matrix)
 21. Churned customers (no orders in last 30 days) — [challenges/021_churned_customers](challenges/021_churned_customers)
+22. Customer reactivation (returned after inactivity) — [challenges/022_customer_reactivation](challenges/022_customer_reactivation)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
