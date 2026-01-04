@@ -44,6 +44,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 32. Sessionization (30-minute inactivity gap) — [challenges/032_sessionization_30min](challenges/032_sessionization_30min)
 33. Session funnel conversion (view → cart → purchase) — [challenges/033_session_funnel_conversion](challenges/033_session_funnel_conversion)
 34. Reactivation cohorts (gap > 14 days) + next-month retention — [challenges/034_reactivation_cohorts](challenges/034_reactivation_cohorts)
+35. Subscription renewals + missed renewals + winback (30 days) — [challenges/035_subscription_renewal_winback](challenges/035_subscription_renewal_winback)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
