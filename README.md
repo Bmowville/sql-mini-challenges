@@ -46,6 +46,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 34. Reactivation cohorts (gap > 14 days) + next-month retention — [challenges/034_reactivation_cohorts](challenges/034_reactivation_cohorts)
 35. Subscription renewals + missed renewals + winback (30 days) — [challenges/035_subscription_renewal_winback](challenges/035_subscription_renewal_winback)
 36. SCD Type 2 customer dimension (history table) — [challenges/036_scd2_customer_dimension](challenges/036_scd2_customer_dimension)
+37. Incremental fact upsert (staging → fact, insert + update) — [challenges/037_incremental_fact_upsert](challenges/037_incremental_fact_upsert)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
