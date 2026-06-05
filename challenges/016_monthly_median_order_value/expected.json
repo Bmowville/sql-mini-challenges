@@ -1,0 +1,25 @@
+{
+  "challenge": "016_monthly_median_order_value",
+  "result_sets": [
+    {
+      "columns": [
+        "ym",
+        "median_order_value"
+      ],
+      "rows": [
+        [
+          "2024-01",
+          32.5
+        ],
+        [
+          "2024-02",
+          42.0
+        ],
+        [
+          "2024-03",
+          38.5
+        ]
+      ]
+    }
+  ]
+}

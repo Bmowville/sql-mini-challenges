@@ -1,0 +1,33 @@
+{
+  "challenge": "021_churned_customers",
+  "result_sets": [
+    {
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "last_order_date",
+        "days_since_last_order"
+      ],
+      "rows": [
+        [
+          104,
+          "Dan",
+          "2023-12-15",
+          108
+        ],
+        [
+          102,
+          "Ben",
+          "2024-01-05",
+          87
+        ],
+        [
+          105,
+          "Eli",
+          "2024-02-29",
+          32
+        ]
+      ]
+    }
+  ]
+}

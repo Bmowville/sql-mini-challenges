@@ -1,0 +1,29 @@
+{
+  "challenge": "002_top_customers",
+  "result_sets": [
+    {
+      "columns": [
+        "customer_id",
+        "total_spend_usd",
+        "spend_rank"
+      ],
+      "rows": [
+        [
+          "C004",
+          300.0,
+          1
+        ],
+        [
+          "C002",
+          135.0,
+          2
+        ],
+        [
+          "C001",
+          99.75,
+          3
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "challenge": "026_repeat_purchase_30d",
+  "result_sets": [
+    {
+      "columns": [
+        "first_purchase_month",
+        "cohort_customers",
+        "repeat_customers_30d",
+        "repeat_rate_30d"
+      ],
+      "rows": [
+        [
+          "2024-01",
+          4,
+          2,
+          0.5
+        ],
+        [
+          "2024-02",
+          3,
+          2,
+          0.6667
+        ],
+        [
+          "2024-03",
+          3,
+          1,
+          0.3333
+        ]
+      ]
+    }
+  ]
+}

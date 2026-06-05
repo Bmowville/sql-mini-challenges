@@ -1,0 +1,58 @@
+{
+  "challenge": "001_passenger_survival",
+  "result_sets": [
+    {
+      "columns": [
+        "sex",
+        "passenger_class",
+        "total_passengers",
+        "avg_age",
+        "survival_rate_pct"
+      ],
+      "rows": [
+        [
+          "female",
+          1,
+          2,
+          32.0,
+          100.0
+        ],
+        [
+          "female",
+          2,
+          1,
+          28.0,
+          100.0
+        ],
+        [
+          "female",
+          3,
+          1,
+          20.0,
+          100.0
+        ],
+        [
+          "male",
+          1,
+          1,
+          42.0,
+          0.0
+        ],
+        [
+          "male",
+          2,
+          1,
+          30.0,
+          0.0
+        ],
+        [
+          "male",
+          3,
+          2,
+          26.0,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

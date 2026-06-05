@@ -1,0 +1,44 @@
+{
+  "challenge": "018_time_to_repeat",
+  "result_sets": [
+    {
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "first_order_date",
+        "second_order_date",
+        "days_to_second"
+      ],
+      "rows": [
+        [
+          102,
+          "Ben",
+          "2024-01-10",
+          "2024-03-05",
+          55
+        ],
+        [
+          101,
+          "Ava",
+          "2024-01-03",
+          "2024-01-20",
+          17
+        ],
+        [
+          104,
+          "Dan",
+          "2024-01-01",
+          "2024-01-02",
+          1
+        ],
+        [
+          105,
+          "Eli",
+          "2024-01-15",
+          "2024-01-15",
+          0
+        ]
+      ]
+    }
+  ]
+}

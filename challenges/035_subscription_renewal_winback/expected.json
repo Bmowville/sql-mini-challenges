@@ -1,0 +1,44 @@
+{
+  "challenge": "035_subscription_renewal_winback",
+  "result_sets": [
+    {
+      "columns": [
+        "user_id",
+        "cycles",
+        "on_time_renewals",
+        "missed_renewals",
+        "winbacks_30d"
+      ],
+      "rows": [
+        [
+          201,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          202,
+          2,
+          0,
+          2,
+          1
+        ],
+        [
+          203,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          204,
+          4,
+          2,
+          2,
+          1
+        ]
+      ]
+    }
+  ]
+}

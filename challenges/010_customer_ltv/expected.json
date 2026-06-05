@@ -1,0 +1,51 @@
+{
+  "challenge": "010_customer_ltv",
+  "result_sets": [
+    {
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "ltv_usd",
+        "orders_count",
+        "ltv_rank"
+      ],
+      "rows": [
+        [
+          102,
+          "Ben",
+          200.0,
+          2,
+          1
+        ],
+        [
+          104,
+          "Dan",
+          200.0,
+          1,
+          1
+        ],
+        [
+          105,
+          "Eli",
+          190.0,
+          3,
+          2
+        ],
+        [
+          101,
+          "Ava",
+          115.0,
+          3,
+          3
+        ],
+        [
+          103,
+          "Cara",
+          90.0,
+          4,
+          4
+        ]
+      ]
+    }
+  ]
+}

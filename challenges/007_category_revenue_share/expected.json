@@ -1,0 +1,29 @@
+{
+  "challenge": "007_category_revenue_share",
+  "result_sets": [
+    {
+      "columns": [
+        "category",
+        "revenue_usd",
+        "pct_of_total"
+      ],
+      "rows": [
+        [
+          "apparel",
+          135.0,
+          41.16
+        ],
+        [
+          "electronics",
+          125.0,
+          38.11
+        ],
+        [
+          "home",
+          68.0,
+          20.73
+        ]
+      ]
+    }
+  ]
+}

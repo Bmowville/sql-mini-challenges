@@ -1,0 +1,33 @@
+{
+  "challenge": "034_reactivation_cohorts",
+  "result_sets": [
+    {
+      "columns": [
+        "reactivation_month",
+        "users_reactivated",
+        "retained_next_month",
+        "retention_rate_next_month"
+      ],
+      "rows": [
+        [
+          "2024-01",
+          3,
+          2,
+          0.6667
+        ],
+        [
+          "2024-02",
+          2,
+          2,
+          1.0
+        ],
+        [
+          "2024-03",
+          1,
+          0,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

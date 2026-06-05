@@ -1,0 +1,49 @@
+{
+  "challenge": "033_session_funnel_conversion",
+  "result_sets": [
+    {
+      "columns": [
+        "region",
+        "sessions_total",
+        "view_sessions",
+        "cart_sessions",
+        "purchase_sessions",
+        "cart_rate_from_view",
+        "purchase_rate_from_view",
+        "purchase_rate_from_cart"
+      ],
+      "rows": [
+        [
+          "CA",
+          3,
+          3,
+          1,
+          1,
+          0.3333,
+          0.3333,
+          1.0
+        ],
+        [
+          "UK",
+          2,
+          1,
+          1,
+          0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          "US",
+          3,
+          3,
+          2,
+          1,
+          0.6667,
+          0.3333,
+          0.5
+        ]
+      ]
+    }
+  ]
+}

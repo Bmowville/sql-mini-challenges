@@ -1,0 +1,65 @@
+{
+  "challenge": "012_product_return_rate",
+  "result_sets": [
+    {
+      "columns": [
+        "product_id",
+        "product_name",
+        "category",
+        "purchased_lines",
+        "returned_lines",
+        "return_rate"
+      ],
+      "rows": [
+        [
+          3,
+          "headphones",
+          "electronics",
+          3,
+          3,
+          1.0
+        ],
+        [
+          2,
+          "jeans",
+          "apparel",
+          3,
+          2,
+          0.6667
+        ],
+        [
+          5,
+          "chair",
+          "home",
+          2,
+          1,
+          0.5
+        ],
+        [
+          4,
+          "mouse",
+          "electronics",
+          3,
+          1,
+          0.3333
+        ],
+        [
+          1,
+          "tshirt",
+          "apparel",
+          3,
+          0,
+          0.0
+        ],
+        [
+          6,
+          "vacuum",
+          "home",
+          2,
+          0,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "challenge": "019_repeat_within_30d_cohort",
+  "result_sets": [
+    {
+      "columns": [
+        "cohort_month",
+        "customers_in_cohort",
+        "repeat_within_30d",
+        "repeat_rate_30d"
+      ],
+      "rows": [
+        [
+          "2024-01",
+          3,
+          1,
+          0.3333
+        ],
+        [
+          "2024-02",
+          3,
+          1,
+          0.3333
+        ],
+        [
+          "2024-03",
+          2,
+          1,
+          0.5
+        ]
+      ]
+    }
+  ]
+}

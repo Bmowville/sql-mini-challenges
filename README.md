@@ -77,6 +77,7 @@ You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor t
 Each challenge includes:
 - `schema.sql` (creates tables + sample data)
 - `solution.sql` (the query)
+- `expected.json` (the expected columns and rows)
 
 Quick run with SQLite:
 
@@ -97,7 +98,19 @@ type challenges\003_customer_retention\schema.sql challenges\003_customer_retent
 ```
 
 ## Validation
-The GitHub Actions workflow runs every `schema.sql` + `solution.sql` pair against SQLite so broken challenge files are caught in pull requests.
+The GitHub Actions workflow runs every `schema.sql` + `solution.sql` pair against SQLite and compares the actual query output with each challenge's `expected.json` snapshot. This catches both broken SQL and accidental answer changes.
+
+Run the full validation locally:
+
+```bash
+python scripts/validate_challenges.py
+```
+
+Regenerate snapshots after intentionally changing a challenge answer:
+
+```bash
+python scripts/validate_challenges.py --write-expected
+```
 
 ## Contributions
 New challenge ideas and fixes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the challenge format, SQL style, and validation checklist.

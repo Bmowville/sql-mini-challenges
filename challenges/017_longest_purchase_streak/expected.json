@@ -1,0 +1,29 @@
+{
+  "challenge": "017_longest_purchase_streak",
+  "result_sets": [
+    {
+      "columns": [
+        "customer_id",
+        "longest_streak_months"
+      ],
+      "rows": [
+        [
+          103,
+          4
+        ],
+        [
+          101,
+          3
+        ],
+        [
+          104,
+          2
+        ],
+        [
+          102,
+          1
+        ]
+      ]
+    }
+  ]
+}

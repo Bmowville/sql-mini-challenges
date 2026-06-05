@@ -1,0 +1,51 @@
+{
+  "challenge": "027_weekly_retention",
+  "result_sets": [
+    {
+      "columns": [
+        "week_start",
+        "active_customers",
+        "prev_week_active",
+        "retained_from_prev",
+        "retention_rate"
+      ],
+      "rows": [
+        [
+          "2024-01-01",
+          3,
+          null,
+          0,
+          null
+        ],
+        [
+          "2024-01-08",
+          2,
+          3,
+          1,
+          0.3333
+        ],
+        [
+          "2024-01-15",
+          3,
+          2,
+          1,
+          0.5
+        ],
+        [
+          "2024-01-22",
+          3,
+          3,
+          1,
+          0.3333
+        ],
+        [
+          "2024-01-29",
+          3,
+          3,
+          1,
+          0.3333
+        ]
+      ]
+    }
+  ]
+}

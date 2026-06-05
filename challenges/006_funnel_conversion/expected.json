@@ -1,0 +1,25 @@
+{
+  "challenge": "006_funnel_conversion",
+  "result_sets": [
+    {
+      "columns": [
+        "view_users",
+        "cart_users",
+        "purchase_users",
+        "view_to_cart_rate",
+        "cart_to_purchase_rate",
+        "view_to_purchase_rate"
+      ],
+      "rows": [
+        [
+          6,
+          4,
+          2,
+          0.6667,
+          0.5,
+          0.3333
+        ]
+      ]
+    }
+  ]
+}
