@@ -8,10 +8,10 @@ Goal: Calculate daily revenue and a 7-day rolling total (or average) using windo
 
 ## Run (SQLite)
 ```bash
-cat schema.sql solution.sql | sqlite3 -header -column :memory:
+cat challenges/005_daily_revenue/schema.sql challenges/005_daily_revenue/solution.sql | sqlite3 -header -column :memory:
 ```
 
 Windows Command Prompt:
 ```bat
-type schema.sql solution.sql | sqlite3 -header -column :memory:
+type challenges\005_daily_revenue\schema.sql challenges\005_daily_revenue\solution.sql | sqlite3 -header -column :memory:
 ```

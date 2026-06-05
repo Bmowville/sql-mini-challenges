@@ -15,10 +15,10 @@ You should see customers with consecutive month pairs like:
 
 ## Run (SQLite)
 ```bash
-cat schema.sql solution.sql | sqlite3 -header -column :memory:
+cat challenges/003_customer_retention/schema.sql challenges/003_customer_retention/solution.sql | sqlite3 -header -column :memory:
 ```
 
 Windows Command Prompt:
 ```bat
-type schema.sql solution.sql | sqlite3 -header -column :memory:
+type challenges\003_customer_retention\schema.sql challenges\003_customer_retention\solution.sql | sqlite3 -header -column :memory:
 ```

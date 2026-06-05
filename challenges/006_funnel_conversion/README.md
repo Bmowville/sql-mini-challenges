@@ -9,10 +9,10 @@ view → add_to_cart → purchase.
 
 ## Run (SQLite)
 ```bash
-cat schema.sql solution.sql | sqlite3 -header -column :memory:
+cat challenges/006_funnel_conversion/schema.sql challenges/006_funnel_conversion/solution.sql | sqlite3 -header -column :memory:
 ```
 
 Windows Command Prompt:
 ```bat
-type schema.sql solution.sql | sqlite3 -header -column :memory:
+type challenges\006_funnel_conversion\schema.sql challenges\006_funnel_conversion\solution.sql | sqlite3 -header -column :memory:
 ```

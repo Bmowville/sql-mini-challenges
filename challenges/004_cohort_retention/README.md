@@ -8,10 +8,10 @@
 
 ## Run (SQLite)
 ```bash
-cat schema.sql solution.sql | sqlite3 -header -column :memory:
+cat challenges/004_cohort_retention/schema.sql challenges/004_cohort_retention/solution.sql | sqlite3 -header -column :memory:
 ```
 
 Windows Command Prompt:
 ```bat
-type schema.sql solution.sql | sqlite3 -header -column :memory:
+type challenges\004_cohort_retention\schema.sql challenges\004_cohort_retention\solution.sql | sqlite3 -header -column :memory:
 ```

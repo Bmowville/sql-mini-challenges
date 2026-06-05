@@ -8,10 +8,10 @@ Goal: Rank customers by total spend and return the top customers (window functio
 
 ## Run (SQLite)
 ```bash
-cat schema.sql solution.sql | sqlite3 -header -column :memory:
+cat challenges/002_top_customers/schema.sql challenges/002_top_customers/solution.sql | sqlite3 -header -column :memory:
 ```
 
 Windows Command Prompt:
 ```bat
-type schema.sql solution.sql | sqlite3 -header -column :memory:
+type challenges\002_top_customers\schema.sql challenges\002_top_customers\solution.sql | sqlite3 -header -column :memory:
 ```
