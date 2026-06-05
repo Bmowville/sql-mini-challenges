@@ -1,0 +1,28 @@
+name: SQL validation
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  validate-challenges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install SQLite
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sqlite3
+      - name: Run every challenge
+        shell: bash
+        run: |
+          set -euo pipefail
+          for dir in challenges/*; do
+            if [[ -f "$dir/schema.sql" && -f "$dir/solution.sql" ]]; then
+              echo "::group::$dir"
+              cat "$dir/schema.sql" "$dir/solution.sql" | sqlite3 -batch -header -column :memory:
+              echo "::endgroup::"
+            fi
+          done

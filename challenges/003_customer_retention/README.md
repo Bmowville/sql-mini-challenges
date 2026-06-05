@@ -13,7 +13,12 @@ You should see customers with consecutive month pairs like:
 - 103: 2024-02 → 2024-03  
 - 104: 2024-01 → 2024-02  
 
-## Run (Windows)
+## Run (SQLite)
+```bash
+cat schema.sql solution.sql | sqlite3 -header -column :memory:
+```
+
+Windows Command Prompt:
 ```bat
 type schema.sql solution.sql | sqlite3 -header -column :memory:
 ```

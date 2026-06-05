@@ -8,7 +8,10 @@ Goal: Calculate survival rate by `sex` and `passenger_class` (Titanic-style aggr
 
 ## Run (SQLite)
 ```bash
-sqlite3 :memory: < challenges/001_passenger_survival/schema.sql
+cat schema.sql solution.sql | sqlite3 -header -column :memory:
+```
 
-sqlite3 :memory: < challenges/001_passenger_survival/solution.sql
+Windows Command Prompt:
+```bat
+type schema.sql solution.sql | sqlite3 -header -column :memory:
 ```
