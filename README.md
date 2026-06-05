@@ -1,5 +1,7 @@
 # SQL Mini Challenges
 
+[![SQL validation](https://github.com/Bmowville/sql-mini-challenges/actions/workflows/sql-validation.yml/badge.svg)](https://github.com/Bmowville/sql-mini-challenges/actions/workflows/sql-validation.yml)
+
 Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window functions, and analytics.
 
 ## What’s inside
@@ -8,6 +10,16 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 - Focus is on readable queries you could use in real work
   
 Tip: Each challenge folder includes its own README with the question, expected output, and run command.
+
+## Skill map
+| Skill area | Good starting points |
+| --- | --- |
+| Aggregation and ranking | 001, 002, 009, 010 |
+| Retention and cohorts | 003, 004, 019, 020, 027, 029 |
+| Revenue analytics | 005, 007, 011, 013, 014, 030 |
+| Date spines and rolling windows | 008, 016, 028 |
+| Product and customer behavior | 012, 015, 017, 018, 021, 022, 023, 024, 025, 026 |
+| Data engineering SQL patterns | 035, 036, 037 |
 
 ## Challenge index
 1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival)
@@ -47,7 +59,6 @@ Tip: Each challenge folder includes its own README with the question, expected o
 35. Subscription renewals + missed renewals + winback (30 days) — [challenges/035_subscription_renewal_winback](challenges/035_subscription_renewal_winback)
 36. SCD Type 2 customer dimension (history table) — [challenges/036_scd2_customer_dimension](challenges/036_scd2_customer_dimension)
 37. Incremental fact upsert (staging → fact, insert + update) — [challenges/037_incremental_fact_upsert](challenges/037_incremental_fact_upsert)
-38. SCD Type 2 customer dimension (track changes over time) — [challenges/038_scd2_customer_dimension](challenges/038_scd2_customer_dimension)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.
@@ -60,13 +71,13 @@ Each challenge includes:
 Quick run with SQLite:
 
 ```bash
-sqlite3 :memory: < challenges/001_passenger_survival/schema.sql
-sqlite3 :memory: < challenges/001_passenger_survival/solution.sql
+cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_survival/solution.sql | sqlite3 -header -column :memory:
 ```
-**Or run both in one go:**
+
+Run another challenge by changing the folder name:
 
 ```bash
-cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_survival/solution.sql | sqlite3
+cat challenges/010_customer_ltv/schema.sql challenges/010_customer_ltv/solution.sql | sqlite3 -header -column :memory:
 ```
 
 ### Windows (Command Prompt)
@@ -75,5 +86,8 @@ cat challenges/001_passenger_survival/schema.sql challenges/001_passenger_surviv
 type challenges\003_customer_retention\schema.sql challenges\003_customer_retention\solution.sql | sqlite3 -header -column :memory:
 ```
 
-Last updated: 2026-01-04
+## Validation
+The GitHub Actions workflow runs every `schema.sql` + `solution.sql` pair against SQLite so broken challenge files are caught in pull requests.
+
+Last updated: 2026-06-05
 

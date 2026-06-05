@@ -6,7 +6,12 @@
 - `schema.sql` — creates `users` + `events` and inserts sample data
 - `solution.sql` — returns `cohort | month_offset | active_users`
 
-## Run (Windows)
+## Run (SQLite)
+```bash
+cat schema.sql solution.sql | sqlite3 -header -column :memory:
+```
+
+Windows Command Prompt:
 ```bat
 type schema.sql solution.sql | sqlite3 -header -column :memory:
 ```
