@@ -1,0 +1,25 @@
+name: Problem report
+description: Report a broken command, incorrect expected output, or unclear challenge
+title: "Issue: "
+labels: ["bug"]
+body:
+  - type: input
+    id: challenge
+    attributes:
+      label: Challenge folder
+      placeholder: challenges/010_customer_ltv
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Include the command you ran and the output or error you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: false

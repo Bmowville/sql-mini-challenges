@@ -1,0 +1,34 @@
+name: Challenge request
+description: Suggest a new SQL challenge or analytics pattern
+title: "Challenge: "
+labels: ["challenge"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Business question or analytics task
+      description: Describe the question the SQL challenge should answer.
+      placeholder: Example: Identify customers whose monthly spend increased for three consecutive months.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Suggested tables or sample data
+      description: List the tables, columns, or sample rows that would make the challenge clear.
+    validations:
+      required: false
+  - type: dropdown
+    id: skill_area
+    attributes:
+      label: Skill area
+      options:
+        - Aggregation and ranking
+        - Retention and cohorts
+        - Revenue analytics
+        - Date spines and rolling windows
+        - Product and customer behavior
+        - Data engineering SQL patterns
+        - Other
+    validations:
+      required: true

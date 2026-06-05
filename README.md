@@ -4,6 +4,14 @@
 
 Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window functions, and analytics.
 
+## Start here
+| Goal | Where to go |
+| --- | --- |
+| Try one challenge quickly | [001 Passenger survival](challenges/001_passenger_survival) |
+| Follow a structured path | [Learning paths](docs/learning-paths.md) |
+| Add or improve a challenge | [Contributing guide](CONTRIBUTING.md) |
+| Report unclear output or a broken command | [Open an issue](https://github.com/Bmowville/sql-mini-challenges/issues/new/choose) |
+
 ## What’s inside
 - Each challenge has a small dataset schema + a question
 - Solutions are written in plain SQL
@@ -20,6 +28,8 @@ Tip: Each challenge folder includes its own README with the question, expected o
 | Date spines and rolling windows | 008, 016, 028 |
 | Product and customer behavior | 012, 015, 017, 018, 021, 022, 023, 024, 025, 026 |
 | Data engineering SQL patterns | 035, 036, 037 |
+
+For ordered study plans, see [Learning paths](docs/learning-paths.md).
 
 ## Challenge index
 1. Passenger survival by class (Titanic-style aggregation) — [challenges/001_passenger_survival](challenges/001_passenger_survival)
@@ -88,6 +98,9 @@ type challenges\003_customer_retention\schema.sql challenges\003_customer_retent
 
 ## Validation
 The GitHub Actions workflow runs every `schema.sql` + `solution.sql` pair against SQLite so broken challenge files are caught in pull requests.
+
+## Contributions
+New challenge ideas and fixes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the challenge format, SQL style, and validation checklist.
 
 Last updated: 2026-06-05
 
