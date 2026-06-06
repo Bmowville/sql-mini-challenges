@@ -35,6 +35,9 @@ Use these paths to work through the challenges by skill area instead of numeric 
 | 1 | [035 Subscription renewal winback](../challenges/035_subscription_renewal_winback) | Renewal state logic |
 | 2 | [036 SCD2 customer dimension](../challenges/036_scd2_customer_dimension) | History table design |
 | 3 | [037 Incremental fact upsert](../challenges/037_incremental_fact_upsert) | Staging-to-fact merge logic |
+| 4 | [038 Inventory stockout risk](../challenges/038_inventory_stockout_risk) | Velocity and lead-time risk scoring |
+| 5 | [039 Trial to paid conversion](../challenges/039_trial_to_paid_conversion) | Cohort conversion windows |
+| 6 | [040 Revenue leakage audit](../challenges/040_revenue_leakage_audit) | Multi-table payment reconciliation |
 
 ## Suggested Review Routine
 1. Read the challenge README and expected output first.

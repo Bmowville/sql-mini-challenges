@@ -30,7 +30,7 @@ Tip: Each challenge folder includes its own README with the question, expected o
 | Revenue analytics | 005, 007, 011, 013, 014, 030 |
 | Date spines and rolling windows | 008, 016, 028 |
 | Product and customer behavior | 012, 015, 017, 018, 021, 022, 023, 024, 025, 026 |
-| Data engineering SQL patterns | 035, 036, 037 |
+| Data engineering SQL patterns | 035, 036, 037, 038, 039, 040 |
 
 For ordered study plans, see [Learning paths](docs/learning-paths.md).
 
@@ -72,6 +72,9 @@ For ordered study plans, see [Learning paths](docs/learning-paths.md).
 35. Subscription renewals + missed renewals + winback (30 days) — [challenges/035_subscription_renewal_winback](challenges/035_subscription_renewal_winback)
 36. SCD Type 2 customer dimension (history table) — [challenges/036_scd2_customer_dimension](challenges/036_scd2_customer_dimension)
 37. Incremental fact upsert (staging → fact, insert + update) — [challenges/037_incremental_fact_upsert](challenges/037_incremental_fact_upsert)
+38. Inventory stockout risk (velocity + lead time scoring) — [challenges/038_inventory_stockout_risk](challenges/038_inventory_stockout_risk)
+39. Trial to paid conversion (cohorts + conversion windows) — [challenges/039_trial_to_paid_conversion](challenges/039_trial_to_paid_conversion)
+40. Revenue leakage audit (invoice + payment reconciliation) — [challenges/040_revenue_leakage_audit](challenges/040_revenue_leakage_audit)
 
 ## How to use
 You can copy/paste the SQL into SQLite, Postgres, or any SQL runner with minor tweaks.

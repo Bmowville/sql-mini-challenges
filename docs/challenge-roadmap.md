@@ -8,14 +8,19 @@ If you want to suggest one of these, open a [challenge request](https://github.c
 
 | Idea | Skill area | What the query should answer |
 | --- | --- | --- |
-| Inventory stockout risk | Product operations | Which products are likely to stock out based on recent sales velocity and current inventory? |
 | First-touch attribution | Product analytics | Which acquisition channel should receive credit for a customer's first purchase? |
-| Trial to paid conversion | SaaS metrics | What share of trial users convert by signup cohort and plan type? |
-| Revenue leakage audit | Data quality | Which orders have missing, duplicated, or mismatched payment records? |
 | Rolling funnel drop-off | Funnel analysis | Where does conversion fall week over week across view, cart, checkout, and purchase events? |
 | Late-arriving facts | Data engineering SQL | Which staged facts arrived after the reporting cutoff and need a correction load? |
 | Slowly changing product prices | Data modeling | Which product price was effective at the time each order was placed? |
 | Support backlog aging | Operations analytics | Which support queues are breaching age targets by priority and owner? |
+
+## Recently Added
+
+| Challenge | Skill area | Focus |
+| --- | --- | --- |
+| [038 Inventory stockout risk](../challenges/038_inventory_stockout_risk) | Product operations | Sales velocity, lead time, and inventory risk scoring |
+| [039 Trial to paid conversion](../challenges/039_trial_to_paid_conversion) | SaaS metrics | Cohort conversion windows and new MRR rollups |
+| [040 Revenue leakage audit](../challenges/040_revenue_leakage_audit) | Data quality | Invoice, payment, refund, and exception reconciliation |
 
 ## Contribution Fit
 

@@ -1,0 +1,69 @@
+{
+  "challenge": "040_revenue_leakage_audit",
+  "result_sets": [
+    {
+      "columns": [
+        "order_id",
+        "expected_amount",
+        "successful_payments",
+        "duplicate_successful_payments",
+        "completed_refunds",
+        "net_collected",
+        "variance",
+        "issue_type"
+      ],
+      "rows": [
+        [
+          502,
+          86.4,
+          0,
+          0,
+          0,
+          0.0,
+          -86.4,
+          "missing_payment"
+        ],
+        [
+          503,
+          110.0,
+          1,
+          0,
+          0,
+          90.0,
+          -20.0,
+          "underpaid"
+        ],
+        [
+          504,
+          64.8,
+          2,
+          1,
+          0,
+          129.6,
+          64.8,
+          "duplicate_payment"
+        ],
+        [
+          505,
+          216.0,
+          1,
+          0,
+          50.0,
+          166.0,
+          -50.0,
+          "underpaid"
+        ],
+        [
+          506,
+          32.4,
+          1,
+          0,
+          0,
+          40.0,
+          7.6,
+          "overpaid"
+        ]
+      ]
+    }
+  ]
+}
