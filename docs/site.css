@@ -245,6 +245,14 @@ code {
   padding-bottom: 72px;
 }
 
+.compact {
+  padding-top: 0;
+}
+
+.inline-actions {
+  margin-top: 20px;
+}
+
 .command {
   margin-top: 18px;
   border-radius: 8px;

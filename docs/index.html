@@ -17,6 +17,7 @@
         <div class="nav-links">
           <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Roadmap</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
         </div>
       </nav>
@@ -33,6 +34,7 @@
           <div class="actions" aria-label="Primary links">
             <a class="button primary" href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
             <a class="button" href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Browse Challenges</a>
+            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Suggest a Challenge</a>
           </div>
         </div>
         <div class="query-preview" aria-label="Example SQL challenge output">
@@ -101,6 +103,22 @@ ORDER BY sex, passenger_class;</code></pre>
             Each challenge has an <code>expected.json</code> snapshot. The validator executes the schema and solution in SQLite, then compares the actual result columns and rows against the expected output.
           </p>
           <pre class="command"><code>python scripts/validate_challenges.py</code></pre>
+        </div>
+      </section>
+
+      <section class="content-section split compact" aria-labelledby="contribute-heading">
+        <div>
+          <p class="eyebrow">Contribute</p>
+          <h2 id="contribute-heading">Bring a realistic analytics question.</h2>
+        </div>
+        <div>
+          <p>
+            The roadmap lists challenge ideas for inventory, attribution, SaaS metrics, support operations, and data quality. Requests and small fixes are welcome when they keep the examples runnable and easy to review.
+          </p>
+          <div class="actions inline-actions" aria-label="Contribution links">
+            <a class="button primary" href="https://github.com/Bmowville/sql-mini-challenges/issues/new?template=challenge_request.yml">Request a Challenge</a>
+            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges/blob/main/CONTRIBUTING.md">Contribution Guide</a>
+          </div>
         </div>
       </section>
     </main>
