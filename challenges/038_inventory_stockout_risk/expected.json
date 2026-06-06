@@ -1,0 +1,59 @@
+{
+  "challenge": "038_inventory_stockout_risk",
+  "result_sets": [
+    {
+      "columns": [
+        "product_id",
+        "sku",
+        "net_available_units",
+        "recent_7d_units",
+        "avg_daily_units",
+        "days_of_cover",
+        "next_open_po_date",
+        "risk_level"
+      ],
+      "rows": [
+        [
+          101,
+          "WIDGET-A",
+          60,
+          70,
+          10.0,
+          6.0,
+          "2024-05-22",
+          "critical"
+        ],
+        [
+          102,
+          "FILTER-B",
+          120,
+          42,
+          6.0,
+          20.0,
+          "2024-05-25",
+          "healthy"
+        ],
+        [
+          103,
+          "PUMP-C",
+          50,
+          21,
+          3.0,
+          16.67,
+          "2024-06-01",
+          "watch"
+        ],
+        [
+          104,
+          "SENSOR-D",
+          8,
+          0,
+          0.0,
+          null,
+          "2024-05-25",
+          "no_recent_demand"
+        ]
+      ]
+    }
+  ]
+}

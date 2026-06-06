@@ -36,6 +36,9 @@ const CHALLENGES = [
   { id: "035", title: "Subscription renewals and winback", folder: "035_subscription_renewal_winback", skill: "engineering", difficulty: "advanced", focus: "Renewal states, missed renewals, and winbacks." },
   { id: "036", title: "SCD Type 2 customer dimension", folder: "036_scd2_customer_dimension", skill: "engineering", difficulty: "advanced", focus: "History table design and effective dating." },
   { id: "037", title: "Incremental fact upsert", folder: "037_incremental_fact_upsert", skill: "engineering", difficulty: "advanced", focus: "Staging-to-fact insert and update patterns." },
+  { id: "038", title: "Inventory stockout risk", folder: "038_inventory_stockout_risk", skill: "engineering", difficulty: "advanced", focus: "Sales velocity, lead time, and inventory risk scoring." },
+  { id: "039", title: "Trial to paid conversion", folder: "039_trial_to_paid_conversion", skill: "engineering", difficulty: "advanced", focus: "Cohort conversion windows and new MRR rollups." },
+  { id: "040", title: "Revenue leakage audit", folder: "040_revenue_leakage_audit", skill: "engineering", difficulty: "advanced", focus: "Invoice, payment, refund, and exception reconciliation." },
 ];
 
 const SKILL_LABELS = {
