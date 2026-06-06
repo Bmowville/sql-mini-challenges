@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="37 runnable SQL analytics challenges covering cohorts, retention, window functions, revenue analysis, and data engineering patterns."
+    >
+    <title>SQL Mini Challenges</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="https://github.com/Bmowville/sql-mini-challenges">SQL Mini Challenges</a>
+        <div class="nav-links">
+          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Runnable SQL practice</p>
+          <h1 id="page-title">37 SQL analytics challenges with validated answers.</h1>
+          <p class="lead">
+            Practice cohorts, retention, window functions, revenue analysis, and data engineering SQL patterns with small datasets you can run locally.
+          </p>
+          <div class="actions" aria-label="Primary links">
+            <a class="button primary" href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
+            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Browse Challenges</a>
+          </div>
+        </div>
+        <div class="query-preview" aria-label="Example SQL challenge output">
+          <div class="preview-toolbar">
+            <span>challenge 001</span>
+            <span>validated</span>
+          </div>
+          <pre><code>SELECT
+  sex,
+  passenger_class,
+  COUNT(*) AS total_passengers,
+  ROUND(100.0 * AVG(survived), 2) AS survival_rate_pct
+FROM passengers
+GROUP BY sex, passenger_class
+ORDER BY sex, passenger_class;</code></pre>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Project facts">
+        <div>
+          <strong>37</strong>
+          <span>challenge folders</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>snapshot-validated outputs</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span>structured learning paths</span>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="paths-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Study paths</p>
+          <h2 id="paths-heading">Start where the skill gap is.</h2>
+        </div>
+        <div class="path-grid">
+          <article>
+            <h3>Analytics Foundations</h3>
+            <p>Grouping, ranking, time-based aggregation, percent-of-total analysis, and customer-level metrics.</p>
+          </article>
+          <article>
+            <h3>Retention and Cohorts</h3>
+            <p>Monthly retention, cohort offsets, repeat behavior, retention matrices, and rolling trends.</p>
+          </article>
+          <article>
+            <h3>Revenue and Growth</h3>
+            <p>Daily revenue, date spines, Pareto analysis, month-over-month growth, and customer contribution share.</p>
+          </article>
+          <article>
+            <h3>Data Engineering SQL</h3>
+            <p>Renewal state logic, SCD Type 2 history, staging-to-fact updates, and incremental load patterns.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section split" aria-labelledby="validation-heading">
+        <div>
+          <p class="eyebrow">Validation</p>
+          <h2 id="validation-heading">CI checks the answers, not just the syntax.</h2>
+        </div>
+        <div>
+          <p>
+            Each challenge has an <code>expected.json</code> snapshot. The validator executes the schema and solution in SQLite, then compares the actual result columns and rows against the expected output.
+          </p>
+          <pre class="command"><code>python scripts/validate_challenges.py</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built for local SQL practice and review.</span>
+      <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/CONTRIBUTING.md">Contribute a challenge</a>
+    </footer>
+  </body>
+</html>

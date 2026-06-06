@@ -7,6 +7,7 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 ## Start here
 | Goal | Where to go |
 | --- | --- |
+| Shareable project overview | [Project site](https://bmowville.github.io/sql-mini-challenges/) |
 | Try one challenge quickly | [001 Passenger survival](challenges/001_passenger_survival) |
 | Follow a structured path | [Learning paths](docs/learning-paths.md) |
 | Add or improve a challenge | [Contributing guide](CONTRIBUTING.md) |
