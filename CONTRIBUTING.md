@@ -2,6 +2,8 @@
 
 Contributions should keep each challenge small, reproducible, and useful for analytics practice.
 
+For candidate ideas, see the [challenge roadmap](docs/challenge-roadmap.md). If you want to suggest a different analytics pattern, open a challenge request before writing the full solution.
+
 ## Challenge Format
 Each challenge belongs in `challenges/NNN_short_name/` and should include:
 

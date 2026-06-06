@@ -10,6 +10,7 @@ Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window fu
 | Shareable project overview | [Project site](https://bmowville.github.io/sql-mini-challenges/) |
 | Try one challenge quickly | [001 Passenger survival](challenges/001_passenger_survival) |
 | Follow a structured path | [Learning paths](docs/learning-paths.md) |
+| Suggest a new challenge | [Challenge roadmap](docs/challenge-roadmap.md) |
 | Add or improve a challenge | [Contributing guide](CONTRIBUTING.md) |
 | Report unclear output or a broken command | [Open an issue](https://github.com/Bmowville/sql-mini-challenges/issues/new/choose) |
 
@@ -114,7 +115,7 @@ python scripts/validate_challenges.py --write-expected
 ```
 
 ## Contributions
-New challenge ideas and fixes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the challenge format, SQL style, and validation checklist.
+New challenge ideas and fixes are welcome. Start with the [challenge roadmap](docs/challenge-roadmap.md) for candidate ideas, then see [CONTRIBUTING.md](CONTRIBUTING.md) for the challenge format, SQL style, and validation checklist.
 
 Last updated: 2026-06-05
 
