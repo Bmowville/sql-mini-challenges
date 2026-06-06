@@ -9,6 +9,7 @@
     >
     <title>SQL Mini Challenges</title>
     <link rel="stylesheet" href="site.css">
+    <script src="challenge-finder.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -16,6 +17,7 @@
         <a class="brand" href="https://github.com/Bmowville/sql-mini-challenges">SQL Mini Challenges</a>
         <div class="nav-links">
           <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
+          <a href="#challenge-finder">Finder</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Roadmap</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
@@ -33,6 +35,7 @@
           </p>
           <div class="actions" aria-label="Primary links">
             <a class="button primary" href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
+            <a class="button" href="#challenge-finder">Find a Challenge</a>
             <a class="button" href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Browse Challenges</a>
             <a class="button" href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Suggest a Challenge</a>
           </div>
@@ -65,6 +68,46 @@ ORDER BY sex, passenger_class;</code></pre>
         <div>
           <strong>4</strong>
           <span>structured learning paths</span>
+        </div>
+      </section>
+
+      <section class="content-section finder-section" id="challenge-finder" aria-labelledby="finder-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Challenge finder</p>
+          <h2 id="finder-heading">Pick a problem that matches the skill you want to practice.</h2>
+          <p class="section-copy">
+            Filter the challenge set by topic and difficulty, then open one of the suggested folders with its schema, solution, and expected output.
+          </p>
+        </div>
+        <div class="finder-panel" data-challenge-finder>
+          <form class="finder-controls" aria-label="Challenge filters">
+            <label>
+              <span>Skill area</span>
+              <select id="skill-filter" name="skill">
+                <option value="all">Any skill area</option>
+                <option value="foundations">Analytics foundations</option>
+                <option value="retention">Retention and cohorts</option>
+                <option value="revenue">Revenue and growth</option>
+                <option value="behavior">Product and customer behavior</option>
+                <option value="engineering">Data engineering SQL</option>
+              </select>
+            </label>
+            <label>
+              <span>Difficulty</span>
+              <select id="difficulty-filter" name="difficulty">
+                <option value="all">Any difficulty</option>
+                <option value="starter">Starter</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </label>
+            <div class="finder-actions">
+              <button class="button primary" type="button" data-find-challenges>Find Matches</button>
+              <button class="button" type="button" data-random-challenge>Random Challenge</button>
+            </div>
+          </form>
+          <div class="finder-summary" data-finder-summary aria-live="polite"></div>
+          <div class="result-grid" data-finder-results></div>
         </div>
       </section>
 
