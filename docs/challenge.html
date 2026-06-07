@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Read SQL Mini Challenges prompts, schemas, solutions, and expected outputs in a static challenge viewer."
+    >
+    <title>Challenge Viewer | SQL Mini Challenges</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="challenge-finder.js" defer></script>
+    <script src="challenge-viewer.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">SQL Mini Challenges</a>
+        <div class="nav-links">
+          <a href="index.html#challenge-finder">Finder</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="viewer-main" data-challenge-viewer>
+      <section class="viewer-hero" aria-labelledby="viewer-title">
+        <div>
+          <p class="eyebrow" data-viewer-kicker>Challenge viewer</p>
+          <h1 id="viewer-title" data-viewer-title>Loading challenge...</h1>
+          <p class="lead" data-viewer-focus></p>
+          <div class="viewer-meta" aria-label="Challenge metadata">
+            <span data-viewer-id></span>
+            <span data-viewer-skill></span>
+            <span data-viewer-difficulty></span>
+          </div>
+          <div class="actions" aria-label="Challenge links">
+            <a class="button primary" data-github-link href="https://github.com/Bmowville/sql-mini-challenges">Open on GitHub</a>
+            <a class="button" href="index.html#challenge-finder">Back to Finder</a>
+          </div>
+        </div>
+        <aside class="viewer-run-card" aria-labelledby="run-heading">
+          <p class="eyebrow">Run locally</p>
+          <h2 id="run-heading">Copy the files into SQLite.</h2>
+          <pre class="command"><code data-run-command>Loading command...</code></pre>
+        </aside>
+      </section>
+
+      <section class="content-section viewer-section" aria-labelledby="files-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Challenge files</p>
+          <h2 id="files-heading">Read the prompt, inspect the SQL, then compare expected output.</h2>
+          <p class="section-copy">
+            These tabs load from the repository source of truth, so the viewer stays aligned with the validated challenge folders.
+          </p>
+        </div>
+
+        <div class="viewer-status" data-viewer-status role="status" aria-live="polite">Loading challenge files...</div>
+
+        <div class="viewer-panel">
+          <div class="viewer-picker">
+            <label>
+              <span>Jump to challenge</span>
+              <select data-challenge-select aria-label="Jump to challenge"></select>
+            </label>
+          </div>
+
+          <div class="viewer-tabs" role="tablist" aria-label="Challenge file tabs">
+            <button class="tab-button" type="button" role="tab" aria-selected="true" data-file-tab="readme">README</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-file-tab="schema">schema.sql</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-file-tab="solution">solution.sql</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-file-tab="expected">expected.json</button>
+          </div>
+
+          <div class="viewer-toolbar">
+            <span data-file-label>README.md</span>
+            <div class="viewer-toolbar-actions">
+              <button class="button" type="button" data-copy-file>Copy file</button>
+              <a class="button" data-raw-link href="https://github.com/Bmowville/sql-mini-challenges">Open raw</a>
+            </div>
+          </div>
+
+          <div class="viewer-content" data-file-content tabindex="0"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built for local SQL practice and review.</span>
+      <a href="index.html#challenge-finder">Find another challenge</a>
+    </footer>
+  </body>
+</html>
