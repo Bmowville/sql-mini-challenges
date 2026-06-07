@@ -14,14 +14,14 @@
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="https://github.com/Bmowville/sql-mini-challenges">SQL Mini Challenges</a>
+        <a class="brand" href="index.html">SQL Mini Challenges</a>
         <div class="nav-links">
-          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
           <a href="#challenge-finder">Finder</a>
-          <a href="challenge.html?id=001_passenger_survival">Viewer</a>
+          <a href="challenge.html">Viewer</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenge Index</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Roadmap</a>
-          <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
+          <a class="nav-cta" href="https://github.com/Bmowville/sql-mini-challenges">GitHub</a>
         </div>
       </nav>
     </header>
@@ -35,10 +35,10 @@
             Practice cohorts, retention, window functions, revenue analysis, and data engineering SQL patterns with small datasets you can run locally.
           </p>
           <div class="actions" aria-label="Primary links">
-            <a class="button primary" href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
+            <a class="button primary" href="challenge.html">Open Challenge Viewer</a>
             <a class="button" href="#challenge-finder">Find a Challenge</a>
-            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Browse Challenges</a>
-            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/challenge-roadmap.md">Suggest a Challenge</a>
+            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
+            <a class="button" href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Browse Index</a>
           </div>
         </div>
         <div class="query-preview" aria-label="Example SQL challenge output">
@@ -69,6 +69,33 @@ ORDER BY sex, passenger_class;</code></pre>
         <div>
           <strong>4</strong>
           <span>structured learning paths</span>
+        </div>
+      </section>
+
+      <section class="content-section start-section" aria-labelledby="start-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Start here</p>
+          <h2 id="start-heading">Move from selection to review without losing context.</h2>
+        </div>
+        <div class="start-grid">
+          <article>
+            <span>1</span>
+            <h3>Pick a challenge</h3>
+            <p>Use the finder to filter by skill area and difficulty, or jump straight into the first challenge.</p>
+            <a href="#challenge-finder">Open Finder</a>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Read it in the viewer</h3>
+            <p>Open the prompt, schema, solution, and expected output without leaving the project site.</p>
+            <a href="challenge.html">Open Viewer</a>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Run it locally</h3>
+            <p>Copy the SQL commands, compare against the validated snapshot, and inspect the source on GitHub.</p>
+            <a href="https://github.com/Bmowville/sql-mini-challenges">Open Repository</a>
+          </article>
         </div>
       </section>
 
@@ -169,7 +196,13 @@ ORDER BY sex, passenger_class;</code></pre>
 
     <footer class="site-footer">
       <span>Built for local SQL practice and review.</span>
-      <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/CONTRIBUTING.md">Contribute a challenge</a>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="#challenge-finder">Finder</a>
+        <a href="challenge.html">Viewer</a>
+        <a href="https://github.com/Bmowville/sql-mini-challenges">Repository</a>
+        <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/CONTRIBUTING.md">Contribute</a>
+      </div>
     </footer>
   </body>
 </html>

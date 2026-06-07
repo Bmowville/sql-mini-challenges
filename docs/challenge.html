@@ -17,15 +17,25 @@
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="index.html">SQL Mini Challenges</a>
         <div class="nav-links">
+          <a href="index.html">Home</a>
           <a href="index.html#challenge-finder">Finder</a>
-          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenges</a>
+          <a href="challenge.html">Viewer</a>
+          <a href="https://github.com/Bmowville/sql-mini-challenges#challenge-index">Challenge Index</a>
           <a href="https://github.com/Bmowville/sql-mini-challenges/blob/main/docs/learning-paths.md">Learning Paths</a>
-          <a href="https://github.com/Bmowville/sql-mini-challenges/releases/latest">Latest Release</a>
+          <a class="nav-cta" href="https://github.com/Bmowville/sql-mini-challenges">GitHub</a>
         </div>
       </nav>
     </header>
 
     <main class="viewer-main" data-challenge-viewer>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="index.html#challenge-finder">Finder</a>
+        <span>/</span>
+        <span data-breadcrumb-current>Challenge viewer</span>
+      </nav>
+
       <section class="viewer-hero" aria-labelledby="viewer-title">
         <div>
           <p class="eyebrow" data-viewer-kicker>Challenge viewer</p>
@@ -39,6 +49,11 @@
           <div class="actions" aria-label="Challenge links">
             <a class="button primary" data-github-link href="https://github.com/Bmowville/sql-mini-challenges">Open on GitHub</a>
             <a class="button" href="index.html#challenge-finder">Back to Finder</a>
+            <a class="button" href="index.html">Home</a>
+          </div>
+          <div class="viewer-sequence" aria-label="Adjacent challenges">
+            <a class="button" data-previous-challenge href="challenge.html">Previous challenge</a>
+            <a class="button" data-next-challenge href="challenge.html">Next challenge</a>
           </div>
         </div>
         <aside class="viewer-run-card" aria-labelledby="run-heading">
@@ -89,7 +104,12 @@
 
     <footer class="site-footer">
       <span>Built for local SQL practice and review.</span>
-      <a href="index.html#challenge-finder">Find another challenge</a>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#challenge-finder">Finder</a>
+        <a href="challenge.html">Viewer</a>
+        <a href="https://github.com/Bmowville/sql-mini-challenges">Repository</a>
+      </div>
     </footer>
   </body>
 </html>

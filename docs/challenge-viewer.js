@@ -126,6 +126,21 @@ function initChallengeSelect(root, selectedChallenge) {
   });
 }
 
+function initAdjacentLinks(root, selectedChallenge) {
+  const currentIndex = window.SQL_CHALLENGES.findIndex((challenge) => challenge.folder === selectedChallenge.folder);
+  const previous = window.SQL_CHALLENGES[(currentIndex - 1 + window.SQL_CHALLENGES.length) % window.SQL_CHALLENGES.length];
+  const next = window.SQL_CHALLENGES[(currentIndex + 1) % window.SQL_CHALLENGES.length];
+  const previousLink = root.querySelector("[data-previous-challenge]");
+  const nextLink = root.querySelector("[data-next-challenge]");
+
+  previousLink.href = `challenge.html?id=${encodeURIComponent(previous.folder)}`;
+  previousLink.textContent = `Previous: ${previous.id}`;
+  previousLink.setAttribute("aria-label", `Open previous challenge, ${previous.title}`);
+  nextLink.href = `challenge.html?id=${encodeURIComponent(next.folder)}`;
+  nextLink.textContent = `Next: ${next.id}`;
+  nextLink.setAttribute("aria-label", `Open next challenge, ${next.title}`);
+}
+
 function getFileUrl(challenge, file) {
   return `${RAW_BASE}/${challenge.folder}/${file.file}`;
 }
@@ -224,9 +239,11 @@ function initChallengeViewer() {
   root.querySelector("[data-viewer-id]").textContent = challenge.id;
   root.querySelector("[data-viewer-skill]").textContent = window.SQL_SKILL_LABELS[challenge.skill];
   root.querySelector("[data-viewer-difficulty]").textContent = window.SQL_DIFFICULTY_LABELS[challenge.difficulty];
+  root.querySelector("[data-breadcrumb-current]").textContent = `Challenge ${challenge.id}`;
   root.querySelector("[data-github-link]").href = `${GITHUB_BASE}/${challenge.folder}`;
   root.querySelector("[data-run-command]").textContent = getRunCommand(challenge);
   initChallengeSelect(root, challenge);
+  initAdjacentLinks(root, challenge);
 
   const state = {
     challenge,
