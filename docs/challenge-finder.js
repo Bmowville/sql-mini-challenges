@@ -1,4 +1,4 @@
-const CHALLENGES = [
+window.SQL_CHALLENGES = [
   { id: "001", title: "Passenger survival by class", folder: "001_passenger_survival", skill: "foundations", difficulty: "starter", focus: "Grouping, rates, and segmented aggregation." },
   { id: "002", title: "Top customers by total spend", folder: "002_top_customers", skill: "foundations", difficulty: "starter", focus: "Ranking customer totals with window functions." },
   { id: "003", title: "Customer retention", folder: "003_customer_retention", skill: "retention", difficulty: "starter", focus: "Repeat customers by month." },
@@ -41,7 +41,9 @@ const CHALLENGES = [
   { id: "040", title: "Revenue leakage audit", folder: "040_revenue_leakage_audit", skill: "engineering", difficulty: "advanced", focus: "Invoice, payment, refund, and exception reconciliation." },
 ];
 
-const SKILL_LABELS = {
+const CHALLENGES = window.SQL_CHALLENGES;
+
+window.SQL_SKILL_LABELS = {
   all: "Any skill area",
   foundations: "Analytics foundations",
   retention: "Retention and cohorts",
@@ -50,15 +52,23 @@ const SKILL_LABELS = {
   engineering: "Data engineering SQL",
 };
 
-const DIFFICULTY_LABELS = {
+const SKILL_LABELS = window.SQL_SKILL_LABELS;
+
+window.SQL_DIFFICULTY_LABELS = {
   all: "Any difficulty",
   starter: "Starter",
   intermediate: "Intermediate",
   advanced: "Advanced",
 };
 
-function getChallengeUrl(challenge) {
+const DIFFICULTY_LABELS = window.SQL_DIFFICULTY_LABELS;
+
+function getChallengeGitHubUrl(challenge) {
   return `https://github.com/Bmowville/sql-mini-challenges/tree/main/challenges/${challenge.folder}`;
+}
+
+function getChallengeViewerUrl(challenge) {
+  return `challenge.html?id=${encodeURIComponent(challenge.folder)}`;
 }
 
 function getMatches(skill, difficulty) {
@@ -82,7 +92,7 @@ function renderResults(results, summary, container) {
           <p>${challenge.focus}</p>
           <div class="result-footer">
             <span>${SKILL_LABELS[challenge.skill]}</span>
-            <a href="${getChallengeUrl(challenge)}">Open challenge</a>
+            <a href="${getChallengeViewerUrl(challenge)}">View challenge</a>
           </div>
         </article>
       `
