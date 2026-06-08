@@ -4,6 +4,8 @@
 
 Short SQL case studies (SQLite/Postgres style): cleaning, aggregation, window functions, and analytics.
 
+![SQL Mini Challenges project site](docs/assets/sql-mini-challenges-home.png)
+
 ## Start here
 | Goal | Where to go |
 | --- | --- |
