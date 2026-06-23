@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bmowville.github.io/sql-mini-challenges/sitemap.xml

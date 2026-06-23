@@ -124,5 +124,5 @@ python scripts/validate_challenges.py --write-expected
 ## Contributions
 New challenge ideas and fixes are welcome. Start with the [challenge roadmap](docs/challenge-roadmap.md) for candidate ideas, then see [CONTRIBUTING.md](CONTRIBUTING.md) for the challenge format, SQL style, and validation checklist.
 
-Last updated: 2026-06-05
+Last updated: 2026-06-23
 
